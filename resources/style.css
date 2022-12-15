@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-
-.nameHead {
-  font-size: 4rem;
+.mainHeader {
   font-family:'Space Mono';
   font-weight: 600;
   margin-top: 0;
   color: whitesmoke;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nameHead {
+  font-size: 4rem;
   margin-left: .2em;
+  width: 50%;
+}
+
+.navBar {
+  width: 50%;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+
+
+.navLinks {
+  display: inline-block;
+  margin-left: 3%;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  
 }
 
 body {
@@ -15,14 +42,39 @@ body {
   font-family:'Space Mono';
 }
 
+.midHeaders {
+  margin-top: 4%;
+  margin-bottom: 0%;
+  color:whitesmoke;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
 .card {
-  height: 50rem;
-  border-radius: 3%;
+  height: 45rem;
+  border-radius: .5rem;
   margin-top: 4rem;
   margin-left: 1rem;
   margin-right: 1rem;
   color:whitesmoke;
   font-family:'Space Mono';
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 36px 10px rgba(184,184,184,0.33); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 36px 10px rgba(184,184,184,0.33); 
+  transition: box-shadow .1s linear;
+}
+
+.card:hover{
+  box-shadow: 0px 10px 13px -7px #000000, 0px 10px 31px 30px rgba(184,184,184,0.33);
+}
+
+
+.cardBody {
+  font-size: 1.2rem;
+  font-family: 'Space Mono';
+  color: black;
+  margin: .4rem;
+  padding: .4rem;
 }
 
 .cardGrid {
@@ -41,54 +93,173 @@ body {
   font-size: 250%;
   margin: .5em;
   font-weight: 600;
+  text-align: right;
 }
 
+/* first set of cards, about me*/
+
 .card1 {
-  background-color: #ffd7af;
+  background-color: rgb(139,29,66);
+  display: flex;
+  flex-direction: column;
 }
 
 .cardHeader1 {
   color: black;
 }
 
-.card2 {
-  background-color: #AFFFFF;
+.cardFooter0 {
+  text-align: left;
+  margin-left: .5rem;
+  margin-bottom: 2rem;
+  font-size: 250%;
+  color: black;
+  font-weight: 600;
 }
 
-.cardHeader2 {
-  color: #ffafaf
+.cardBodyAcademics{
+  text-align: right;
+}
+
+.cardBodyExperience {
+  margin-top: auto;
+  text-align: left;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("maguire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .card3 {
-  background-color: #ffafd7;
+  background-color: rgb(167,84,112);
+  display: flex;
+  flex-direction: column;
 }
 
 .cardHeader3 {
+  color: black;
+  text-align: left;
+}
+
+.cardBodySkills {
+  text-align: left;
+}
+
+.cardBodyLanguages {
+  margin-top: auto;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.cardFooterLanguages {
+  text-align: right;
+}
+
+
+
+
+
+
+/* second set of cards, projects*/
+
+
+.cardFooter {
+  background-color: black;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 2rem;
+  width: 100%;
+  opacity: 80%;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
   color: white;
+}
+
+.links {
+  color: white !important;
 }
 
 .card4 {
-  background-color: #ffafd7;
-}
-
-.cardHeader4 {
-  color: white;
-  background-color: grey;
-  opacity: 75%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("forge.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .card5 {
-  background-color: #ffafd7;
-}
-
-.cardHeader5 {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("appHav.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .card6 {
-  background-color: #ffafd7;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("p5p.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
-.cardHeader6 {
-  color: white;
+/* third set of cards, contact and info*/
+
+.card7 {
+  background-color: beige;
+  color: black;
+}
+
+.cardHeader7{
+  text-align: left;
+}
+
+.cardBodyReach {
+
+}
+
+.card8 {
+  background-color: beige;
+}
+
+.card9 {
+  background-color: beige;
+  
+}
+
+.cardBodyResources {
+  text-align: right;
+}
+
+.cardHeader9{
+  color: black;
+  text-align: right;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  /* styles to apply when the screen is less than 750 pixels wide */
+  .navbar {
+      display: none; /* hide the navbar */
+  }
+  .navBar {
+    display: none;
+  }
+  .navLinks {
+    display: none;
+  }
 }
