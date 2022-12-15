@@ -263,3 +263,10 @@ body {
     display: none;
   }
 }
+
+@media screen and (min-width: 700px) {
+  /* styles to apply when the screen is less than 750 pixels wide */
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  }
+}
