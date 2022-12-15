@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+.nameHead {
+  font-size: 4rem;
+  font-family:'Space Mono';
+  font-weight: 600;
+  margin-top: 0;
+  color: whitesmoke;
+  margin-left: .2em;
+}
+
+body {
+  background-color: rgb(4, 0, 26);
+  font-family:'Space Mono';
+}
+
+.card {
+  height: 50rem;
+  border-radius: 3%;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:whitesmoke;
+  font-family:'Space Mono';
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.cardGrid1 {
+  margin-bottom: 3rem;
+}
+
+.cardHeader {
+  font-size: 250%;
+  margin: .5em;
+  font-weight: 600;
+}
+
+.card1 {
+  background-color: #ffd7af;
+}
+
+.cardHeader1 {
+  color: black;
+}
+
+.card2 {
+  background-color: #AFFFFF;
+}
+
+.cardHeader2 {
+  color: #ffafaf
+}
+
+.card3 {
+  background-color: #ffafd7;
+}
+
+.cardHeader3 {
+  color: white;
+}
+
+.card4 {
+  background-color: #ffafd7;
+}
+
+.cardHeader4 {
+  color: white;
+  background-color: grey;
+  opacity: 75%;
+}
+
+.card5 {
+  background-color: #ffafd7;
+}
+
+.cardHeader5 {
+  color: white;
+}
+
+.card6 {
+  background-color: #ffafd7;
+}
+
+.cardHeader6 {
+  color: white;
+}
